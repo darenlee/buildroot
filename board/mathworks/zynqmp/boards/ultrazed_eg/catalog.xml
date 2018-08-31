@@ -1,4 +1,4 @@
-<board name="ultrazed-eg" platform="zynqmp">
+<board name="ultrazed_eg" platform="zynqmp">
     <default>
         <app name="default">
         </app>
