@@ -1210,14 +1210,14 @@
 
 		dp_snd_card {
 			compatible = "xlnx,dp-snd-card";
-			status = "okay";
+			status = "disabled";
 			xlnx,dp-snd-pcm = <0x2d 0x2e>;
 			xlnx,dp-snd-codec = <0x2f>;
 		};
 
 		dp_snd_codec0 {
 			compatible = "xlnx,dp-snd-codec";
-			status = "okay";
+			status = "disabled";
 			clock-names = "aud_clk";
 			clocks = <0x3 0x11>;
 			linux,phandle = <0x2f>;
@@ -1226,7 +1226,7 @@
 
 		dp_snd_pcm0 {
 			compatible = "xlnx,dp-snd-pcm";
-			status = "okay";
+			status = "disabled";
 			dmas = <0x28 0x4>;
 			dma-names = "tx";
 			linux,phandle = <0x2d>;
@@ -1235,7 +1235,7 @@
 
 		dp_snd_pcm1 {
 			compatible = "xlnx,dp-snd-pcm";
-			status = "okay";
+			status = "disabled";
 			dmas = <0x28 0x5>;
 			dma-names = "tx";
 			linux,phandle = <0x2e>;

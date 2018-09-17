@@ -147,16 +147,16 @@
 	status = "okay";
 };
 &xlnx_dp_snd_pcm0 {
-	status = "okay";
+	status = "disabled";
 };
 &xlnx_dp_snd_pcm1 {
-	status = "okay";
+	status = "disabled";
 };
 &xlnx_dp_snd_card {
-	status = "okay";
+	status = "disabled";
 };
 &xlnx_dp_snd_codec0 {
-	status = "okay";
+	status = "disabled";
 };
 &usb0 {
 	status = "okay";
