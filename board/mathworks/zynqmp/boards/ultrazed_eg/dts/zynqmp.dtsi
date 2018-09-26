@@ -683,7 +683,8 @@
 			#interrupt-cells = <2>;
 			reg = <0x0 0xff0a0000 0x0 0x1000>;
 			power-domains = <&pd_gpio>;
-		};
+
+				};
 
 		i2c0: i2c@ff020000 {
 			compatible = "cdns,i2c-r1p14", "cdns,i2c-r1p10";
@@ -705,6 +706,24 @@
 			#address-cells = <1>;
 			#size-cells = <0>;
 			power-domains = <&pd_i2c1>;
+
+			i2cswitch@70 {
+				compatible = "nxp,pca9542";
+				#address-cells = <0x1>;
+				#size-cells = <0x0>;
+				reg = <0x70>;
+
+				i2c@0 {
+					#address-cells = <0x1>;
+					#size-cells = <0x0>;
+					reg = <0x0>;
+
+					eeprom@52 {
+						compatible = "at,24c08";
+						reg = <0x52>;
+					};
+				};
+			};
 		};
 
 		ocm: memory-controller@ff960000 {
