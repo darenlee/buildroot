@@ -40,7 +40,7 @@
 	xlnx,max-lanes = <2>;
 };
 &xlnx_dpdma {
-	status = "okay";
+	status = "disabled";
 };
 &gem3 {
 	phy-mode = "rgmii-id";
