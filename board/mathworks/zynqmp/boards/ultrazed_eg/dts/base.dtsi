@@ -31,3 +31,5 @@
 #include "system-user.dtsi"
 #include "zynqmp-mw-fpga-bridge-common.dtsi"
 #include "zynqmp-mw-common.dtsi"
+#include "mw-aximm-common.dtsi"
+
